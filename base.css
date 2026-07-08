@@ -1,0 +1,73 @@
+body{
+     background-color: black;
+     color: white;
+     margin: 0;
+     font-family: sans-serif;
+     line-height: 1.6;
+     overflow-x: hidden;
+}
+
+section{
+     max-width: 320px;
+     margin: 0 auto;
+     padding: 16vh 1.5rem;
+     position: relative;
+     z-index: 1;
+     text-align: center;
+}
+
+h1 {
+     font-size: clamp(4rem, 10vw, 6rem);
+}
+a, p{
+     font-size: clamp(2rem, 5vw, 3rem);
+
+
+}
+
+a:link, a:visited {
+  background-color: #6bfa4f;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(95, 218, 95);
+}
+
+.web-wrap{
+     position:fixed;
+     top: 50%;
+     left: 50%;
+     width: min(2000px, 95vw);
+     height: min(2000px, 95vw);
+     margin-left: calc( min(2000px, 95vw)/-2);
+     margin-top: calc( min(2000px, 95vw)/-2);
+     transform-origin: 50% 0%;
+     animation: swing 13s ease-in-out infinite alternate;
+     pointer-events: none;
+     z-index: 5;
+     mix-blend-mode: difference;
+}
+
+#center{
+     text-align: center;
+}
+
+.spider {
+     position: fixed;
+     width: 40px;
+     height: 40px;
+     pointer-events: none;
+     z-index: 10;
+     mix-blend-mode: difference;
+     color: #00ff00;
+}
+.spider svg {
+     width: 100%;
+     height: 100%;
+     fill: currentColor;
+}
